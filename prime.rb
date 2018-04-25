@@ -1,5 +1,9 @@
 def prime?(num)
   return false if n<2
-  (2..num).any? {|n| return false if num % n == 0}
+  (2..num-1).each do |n|
+    if num % n == 0
+    return false 
+  end
+end
   true
 end
