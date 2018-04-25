@@ -1,1 +1,6 @@
-# Add  code here!
+def is_prime(num)
+  (2..(num-1)).each do |n|
+    return false if num % n
+  end
+  true
+end
